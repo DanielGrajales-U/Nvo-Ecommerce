@@ -1,0 +1,77 @@
+
+.inputBox{
+    position: relative;
+    width: 200px;
+    margin: 25px;
+}
+
+.input{
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    outline: none;
+    color:#fff;
+    font-size: 1em;
+}
+
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #fff3;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputBox .input:focus ~ span, .inputBox .input:valid ~ span{
+    color: var(--second-color);
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background-color: #000000ea;
+    border-left: 1px solid var(--main-color);
+    border-right: 1px solid var(--main-color);
+    letter-spacing: 0.2em;
+}
+
+
+.btn{
+    width: 20%;
+    padding: 10px;
+    background-color: var(--third-color);
+    border: none;
+    border-radius: 10px;
+    transition: background-color 1s ease-in,width 1s ease-in;
+    cursor: pointer;
+}
+
+
+.btn:hover{
+    background-color: var(--main-color);
+    width: 150px;
+}
+
+.btn span{
+    transition: margin-right 1s ease-in, color 1s ease-in;
+}
+.btn:hover span{
+    margin-right:200px;
+    color: var(--third-color)
+}
+
+btn:hover .icono{
+    left:100%
+}
+
+.register{
+    font-size: 10px;
+    margin-top: 30px;
+}
+
+.copyright{
+    margin-top: 100px
+}

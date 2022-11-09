@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import Login from './components/Login/Login'
 import {
   BrowserRouter as Router,
   Routes,
   Route
 } from 'react-router-dom'
 import './App.css'
+import Inicio from './components/Sesion/Inicio/inicio'
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div className="App">
           <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/" element={<Inicio />} />
           </Routes>
       </div>
     </Router>
