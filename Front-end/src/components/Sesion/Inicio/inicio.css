@@ -1,15 +1,20 @@
 :root{
-    --main-color: #1c2c20;
-    --second-color: #fff;
-    --third-color: #0008;
+    --main-color: #9BD7D1;
+    --second-color: #EFEEEE;
+    --second-color-degrade: #efeeee9b;
+    --third-color: #000;
+    --fourth-color: #325D79;
+    --fifth-color: #F9A26C;
+    --six-color: #F26627;
 }
+
 *{
     margin: 0;
     padding: 0;
 }
 
 .sesion{
-    background-image: url(.../../../../../assets/backGround.jpg) ;
+    background-image: url(.../../../../../assets/BackGroundNew.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -18,15 +23,17 @@
     justify-content: center;
     text-align: center;
     display: block;
+    color:var(--third-color)
+    
 }
 
 .content{
-    background-color: var(--third-color) ;
+    background-color: var(--second-color-degrade) ;
     position:relative;
-    width: 80%;
-    height: 80%;
-    border-radius: 10%;
-    padding: 20px;
+    width: 75%;
+    height: 75%;
+    border-radius: 15px;
+    padding: 5px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -36,7 +43,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .nvo{
+    background-image: url('../../../assets/robot.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
     position: relative;
     width: 80%;
     height: 90%;
@@ -45,8 +57,8 @@
 }
 
 .nvo img{
-    width: 100px;
-    height: 100px;
+    width: 50%;
+    height: 50%;
 }
 
 .contenedor{
@@ -99,4 +111,8 @@
     100%{
         margin-top: 0;
     }
+}
+
+.sesion .copyright{
+    margin: 200px;
 }
